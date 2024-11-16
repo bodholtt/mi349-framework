@@ -1,12 +1,43 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./tailwind.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" href="tailwind.css">
 </head>
-<body>
+
+<body class="bg-gradient-to-br from-red-700 to-amber-100 h-screen overflow-hidden flex flex-col">
+
+<header class="flex bg-gradient-to-br from-amber-100 to-amber-200 px-8 py-2 justify-between items-center border-b-8 border-red-950">
+    <p class="font-extrabold text-8xl bg-clip-text bg-gradient-to-br text-transparent from-red-800 to-red-950">NILE HOT SAUCE</p>
+    <nav class="flex justify-center items-center gap-4">
+        <a href="/" class="text-red-950 text-2xl">HOME</a>
+        <a href="/" class="text-red-950 text-2xl">PRODUCTS</a>
+        <a href="/" class="text-red-950 text-2xl">ACCOUNT</a>
+    </nav>
+</header>
+
+<main class="grid place-items-center h-full">
+    <section class="bg-white p-8 rounded-3xl shadow-red-950 shadow-2xl">
+        <h1 class="font-extrabold text-4xl text-red-950">LOG IN</h1>
+        <form class="p-2 flex flex-col gap-2">
+            <div class="grid grid-cols-2 gap-2">
+                <label class="flex gap-4" for="email">EMAIL:</label>
+                <input type="email" id="email" class="bg-amber-50 text-red-950 border-red-950 border">
+                <label class="flex gap-4" for="password">PASSWORD:</label>
+                <input type="password" id="password" class="bg-amber-50 text-red-950 border-red-950 border">
+            </div>
+            <button class="rounded bg-amber-50 text-red-950 border-red-950 border">&#128293; LOG IN</button>
+        </form>
+    </section>
+
+    <!-- pyramid -->
+    <div class="w-[120rem] h-[120rem] -z-10 rotate-45 absolute -right-1/4 -bottom-[100rem] border-amber-950 border-8 bg-gradient-to-bl from-amber-200 to-amber-400">
+    </div>
+</main>
+
 
 </body>
 </html>
